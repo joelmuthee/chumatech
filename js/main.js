@@ -102,4 +102,10 @@ document.addEventListener('DOMContentLoaded', function () {
             contactForm.reset();
         });
     }
+
+    // Dynamic Year
+    const yearSpan = document.getElementById('currentYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 });
