@@ -938,4 +938,10 @@ img {
  . c o n t a c t - c e n t e r e d  
  . c o n t a c t - i t e m  
    j u s t i f y - c o n t e n t :   c e n t e r ;   t e x t - a l i g n :   c e n t e r ;    
+ . c o n t a c t - s p l i t  
+ . c o n t a c t - d i r e c t  
+   j u s t i f y - c o n t e n t :   f l e x - s t a r t ;    
+ . c o n t a c t - s p l i t  
+ . c o n t a c t - i t e m  
+   j u s t i f y - c o n t e n t :   f l e x - s t a r t ;   t e x t - a l i g n :   l e f t ;    
  
