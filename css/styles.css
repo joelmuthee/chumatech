@@ -1256,13 +1256,13 @@ img {
 
     /* Logo Styling */
     .footer-logo {
-        height: 50px;
-        /* Smaller Logo */
+        height: 30px;
+        /* Tiny Logo */
         width: auto;
         background: #fff;
-        padding: 5px 10px;
-        border-radius: 4px;
-        margin-bottom: 30px;
+        padding: 2px 5px;
+        border-radius: 2px;
+        margin-bottom: 20px;
         object-fit: contain;
     }
 
