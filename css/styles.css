@@ -1235,72 +1235,65 @@ img {
         color: var(--accent-color);
     }
 
-    /* Modern Footer Layout - Strict 2 Columns */
-    .footer-wrapper {
+    /* Reverted Footer (Original Layout) */
+    .footer-contact {
+        background-color: #111;
+        color: #fff;
+        padding: 80px 0 20px;
+    }
+
+    .contact-split {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 60px;
-        padding-bottom: 40px;
-        border-bottom: 1px solid #333;
+        gap: 50px;
+        align-items: flex-start;
+        margin-bottom: 50px;
     }
 
-    .footer-col-left,
-    .footer-col-right {
+    .contact-map p,
+    .contact-form-col p {
+        color: #ccc;
+        margin-bottom: 20px;
+    }
+
+    .contact-direct {
         display: flex;
         flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
     }
 
-    .footer-col-left {
-        align-items: flex-start;
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #ccc;
+        font-size: 0.95rem;
     }
 
-    /* Logo Styling */
-    .footer-logo {
-        height: 30px;
-        /* Tiny Logo */
-        width: auto;
-        background: #fff;
-        padding: 2px 5px;
-        border-radius: 2px;
-        margin-bottom: 20px;
-        object-fit: contain;
-    }
-
-    .footer-col-right {
-        align-items: flex-start;
-        /* Or flex-end if right-aligned preference */
-    }
-
-    .footer-col h3,
-    .footer-col-left h3,
-    .footer-col-right h3 {
+    .contact-item i {
         color: var(--accent-color);
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-size: 1rem;
-        margin-bottom: 25px;
-        font-weight: 600;
-        margin-top: 0;
+        width: 20px;
     }
 
-    /* Adjust links spacing in new layout */
-    .footer-links li {
-        margin-bottom: 12px;
+    .contact-item a {
+        color: #ccc;
+    }
+
+    .contact-item a:hover {
+        color: var(--accent-color);
     }
 
     .footer-bottom {
-        border: none;
-        padding-top: 25px;
-        margin: 0;
+        border-top: 1px solid #333;
+        padding-top: 30px;
+        margin-top: 0;
+        text-align: center;
+        color: #777;
     }
 
-    .footer-bottom a {
-        color: var(--accent-color);
-        font-weight: 600;
-    }
-
-    @media(max-width: 768px) {
-        .footer-wrapper {
+    @media (max-width: 768px) {
+        .contact-split {
             grid-template-columns: 1fr;
             gap: 40px;
         }
