@@ -820,6 +820,11 @@ img {
     font-size: 0.95rem;
 }
 
+.contact-item a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 2px;
+}
+
 .contact-item i {
     color: var(--accent-color);
 }
@@ -1298,3 +1303,4 @@ img {
             gap: 40px;
         }
     }
+}
