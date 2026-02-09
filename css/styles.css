@@ -892,6 +892,8 @@ img {
 
     .menu-toggle {
         display: flex;
+        position: relative;
+        z-index: 1101;
     }
 
     /* Mobile logo size fix */
@@ -927,8 +929,17 @@ img {
     }
 
     .about-stats {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 15px 10px;
+    }
+
+    .stat-card h3 {
+        font-size: 1.5rem;
     }
 
     /* Additional mobile fixes */
