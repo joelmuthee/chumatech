@@ -339,11 +339,7 @@ img {
     height: 100%;
     /* Restored overlay opacity to 0.7/0.8 while keeping image sharp */
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../assets/images/hero-bg-new.jpg') center/cover no-repeat;
-    /* filter: blur(2px); */
-    /* Removed blur for clarity */
     z-index: -1;
-    transform: scale(1.0);
-    /* Removed scale up since blur is gone */
 }
 
 .hero-content {
