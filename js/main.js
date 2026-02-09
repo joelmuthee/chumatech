@@ -67,26 +67,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Intersection Observer for Animation
     const observerOptions = {
-        threshold: 0.1
+        threshold: 0.15 // Slightly higher to avoid accidental triggers
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Determine which animation to play based on class, or default to fade
-                entry.target.style.opacity = '1';
-                entry.target.style.animationPlayState = 'running';
-                observer.unobserve(entry.target);
+                entry.target.classList.add('in-view');
+            } else {
+                entry.target.classList.remove('in-view'); // Remove class to reset animation
             }
         });
     }, observerOptions);
 
-    // Get elements for animation (some might have classes added dynamically or manually)
+    // Get elements for animation
     const fadeElements = document.querySelectorAll('.fade-in, .slide-up, .slide-in-left, .slide-in-right, .zoom-in');
 
     fadeElements.forEach(el => {
-        // We pause animation initially
-        el.style.animationPlayState = 'paused';
         observer.observe(el);
     });
 

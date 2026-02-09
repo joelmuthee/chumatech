@@ -121,14 +121,20 @@ img {
 }
 
 /* Animation Utilities */
-.slide-up {
-    animation: slideUp 0.8s ease-out forwards;
+.slide-up,
+.fade-in,
+.zoom-in,
+.slide-in-left,
+.slide-in-right {
     opacity: 0;
 }
 
-.fade-in {
+.slide-up.in-view {
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.fade-in.in-view {
     animation: fadeIn 1s ease-out forwards;
-    opacity: 0;
 }
 
 .delay-100 {
@@ -148,19 +154,16 @@ img {
 }
 
 /* New Animations */
-.zoom-in {
+.zoom-in.in-view {
     animation: zoomIn 0.8s ease-out forwards;
-    opacity: 0;
 }
 
-.slide-in-left {
+.slide-in-left.in-view {
     animation: slideInLeft 0.8s ease-out forwards;
-    opacity: 0;
 }
 
-.slide-in-right {
+.slide-in-right.in-view {
     animation: slideInRight 0.8s ease-out forwards;
-    opacity: 0;
 }
 
 @keyframes zoomIn {
