@@ -1344,3 +1344,27 @@ img {
         }
     }
 }
+
+/* Master Check: Force 2-columns for Services on Mobile */
+@media (max-width: 768px) {
+    .services-grid {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+        justify-content: space-between !important;
+        grid-template-columns: unset !important;
+    }
+
+    .service-item {
+        flex: 0 0 calc(50% - 5px) !important;
+        max-width: calc(50% - 5px) !important;
+        width: calc(50% - 5px) !important;
+        padding: 15px 5px !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+    }
+
+    .service-item i {
+        font-size: 2rem !important;
+    }
+}
