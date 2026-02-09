@@ -337,8 +337,11 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Restored overlay opacity to 0.7/0.8 while keeping image sharp */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../assets/images/header-new.jpg') center/cover no-repeat;
+    /* Hero Image: header-new.jpg */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../assets/images/header-new.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     z-index: -1;
 }
 
