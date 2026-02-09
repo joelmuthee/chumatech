@@ -946,6 +946,27 @@ img {
         font-size: 1.2rem !important;
     }
 
+    /* 2-Column Services on Mobile */
+    .services-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+    }
+
+    .service-item {
+        padding: 15px 5px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .service-item i {
+        font-size: 2rem !important;
+        margin-bottom: 10px !important;
+    }
+
     /* Additional mobile fixes */
     .logo-img {
         width: 180px;
