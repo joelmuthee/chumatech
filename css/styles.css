@@ -1368,3 +1368,16 @@ img {
         font-size: 2rem !important;
     }
 }
+
+/* Center Footer Contact Info on Mobile */
+@media (max-width: 768px) {
+    .contact-direct {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .contact-item {
+        justify-content: center !important;
+        width: 100% !important;
+    }
+}
