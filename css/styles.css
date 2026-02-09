@@ -929,20 +929,21 @@ img {
     }
 
     .about-stats {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
         gap: 10px !important;
-        width: 100% !important;
+        justify-content: space-between !important;
     }
 
     .stat-card {
-        padding: 15px 5px !important;
-        width: 100% !important;
-        min-width: 0 !important;
+        flex: 0 0 calc(50% - 5px) !important;
+        max-width: calc(50% - 5px) !important;
+        padding: 10px 5px !important;
+        box-sizing: border-box !important;
     }
 
     .stat-card h3 {
-        font-size: 1.3rem !important;
+        font-size: 1.2rem !important;
     }
 
     /* Additional mobile fixes */
