@@ -927,7 +927,8 @@ img {
     }
 
     .about-stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
     }
 
     /* Additional mobile fixes */
@@ -945,7 +946,7 @@ img {
     }
 
     .client-logo-img {
-        height: 80px;
+        height: 50px;
         object-fit: contain;
         transition: var(--transition);
         opacity: 1;
