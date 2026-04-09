@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chumatech.com/sitemap.xml
+
+Disallow: /tmp/
+Disallow: /*.zip
+Disallow: /*.bak
+Disallow: /*.ps1
