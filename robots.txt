@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chumatech.com/sitemap.xml
+Sitemap: https://chumatechengineering.com/sitemap.xml
 
 Disallow: /tmp/
 Disallow: /*.zip
